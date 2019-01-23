@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+
+/* Das ist ein Kommentar */
+html{
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+body{
+  background-color: #fff;
+  margin: 0;
+}
+
+#menu{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#menu a{
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#burger{
+  background: transparent;
+  border: none;
+}
+
+#navigation.show{
+  display: block;
+}
+
+#navigation{
+  display: none;
+}
+
+#mast-head{
+  height: 60px;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo{
+  height: 40px;
+  width: auto;
+}
+
+#hero{
+  background-image: url(../img/intro.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.button{
+  text-transform: uppercase;
+  text-decoration:none;
+  background: #fff;
+  padding: 1rem;
+  border-color: #374A67;
+  border-width: 1px;
+  border-style: solid;
+  color: #374A67;
+  font-weight: bold;
+  border-radius: 4px;
+
+
+}
