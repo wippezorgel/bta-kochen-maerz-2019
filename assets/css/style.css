@@ -35,6 +35,15 @@ body{
 
 #navigation.show{
   display: block;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  top: 60px;
+  left: 0;
+  text-align: center;
+  white-space: pre-line;
+
 }
 
 #navigation{
@@ -43,12 +52,21 @@ body{
 
 #mast-head{
   height: 60px;
-
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: red;
+  top: 0;
+
+
+
+
+
+
 }
 
 #logo{
@@ -64,6 +82,10 @@ body{
   background-position: center;
   color: #fff;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .button{
