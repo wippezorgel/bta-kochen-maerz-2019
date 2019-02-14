@@ -13,6 +13,7 @@ html{
 body{
   background-color: #fff;
   margin: 0;
+
 }
 
 #menu{
@@ -59,13 +60,8 @@ body{
   align-items: center;
   position: fixed;
   width: 100%;
-  background-color: red;
+  background-color: #fff;;
   top: 0;
-
-
-
-
-
 
 }
 
@@ -126,6 +122,10 @@ body{
 
 .card p a{
   color: #828282;
+
+}
+.card p{
+    padding: 0 1rem;
 }
 
 .button-blue{
@@ -141,9 +141,52 @@ body{
   background-color: #fff;
 }
 
+#rezepte h2{
+  text-align:center,
+}
+
+.widget{
+  background-color: #04122b;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.widget h2{
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.widget h2 span{
+  display: block;
+}
+
+.email{
+  height: 3rem;
+  border-radius: 4px;
+  padding: 1rem;
+  border: 1px solid #04122b;
+}
+
+#footer a{
+  text-decoration: none;
+  color: #000;
+}
+
+#footer ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer-social li{
+  display: inline-block;
+}
 
 @media (min-width:768px) {
   .row{
     display: flex;
   }
+
+
 }
