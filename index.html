@@ -1,52 +1,70 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <!--Das wird grau gemacht-->
-    <!-- geht auch über CTL/Str+#-->
-    <title>Text in der Registerkarte</title>
-    <meta name="description" content="Hier folgt der Schnipseltext für die Suchmaschine">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/stylesheet.css">
 
-  </head>
-  <body>
-    <header id="header">
+<head>
+  <meta charset="utf-8">
+  <!--Das wird grau gemacht-->
+  <!-- geht auch über CTL/Str+#-->
+  <title>Text in der Registerkarte</title>
+  <meta name="description" content="Hier folgt der Schnipseltext für die Suchmaschine">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+</head>
+
+<body>
+  <header id="header">
+
+    <div class="container">
+      <a href="#">
+        <img src="assets/img/logo.svg" alt="Logo Kochmütze" width="50" title="Klick unbedingt hier">
+      </a>
+
+      <button type="button" name="button" id="burger">
+        <img src="assets/img/menu.svg" alt="Menü" height="40" title="Hier geht es zum Menü">
+      </button>
 
 
-        <a href="#">
-          <img src="assets/img/logo.svg" alt="Logo Kochmütze" width="50" title="Klick unbedingt hier">
-        </a>
-        <nav>
-          <button type="button" name="button">
+      <nav id="navigation">
+
+        <ul>
+          <li>
             <a href="#">
-              <img src="assets/img/menu.svg" alt="Menü" height="40" title="Hier geht es zum Menü">
-          </button>
-          <ul>
-            <li>
-              <a href="#" id="lieblingslink">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Rezepte
-              </a>
-            </li>
-            <li>
-              <a href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Rezepte
+            </a>
+          </li>
+          <li>
+            <a href="#">
               Kategorien
             </a>
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="#">
               Über uns
             </a>
           </li>
-          </ul>
-        </nav>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="hero-box">
+        <h1>Die besten Rezepte für Webworker</h1>
+        <p>Es gibt mehr als Pizza & Ravioli.</p>
+        <a href="#">Entdecke die Leckereien</a>
       </div>
-    </header>
-  </body>
+    </section>
+  </main>
+
+
+  <script src="assets/js/menu.js"></script>
+</body>
 
 </html>
