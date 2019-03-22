@@ -26,6 +26,11 @@ nav a:hover {
   color: lightgrey;
 }
 
+article {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -66,10 +71,14 @@ h2{
 
 .card a {
   text-decoration: none;
+  color: #000;
 }
 
 .card{
   text-align: center;
+  border-radius: 4px;
+  box-shadow: -2px 3px 8px rgba(0,0,0,0.66);
+  overflow: hidden;
 }
 
 .card h3 a{
@@ -84,6 +93,7 @@ text-shadow: 6px 4px 10px rgba(0,0,0,0.43);
 .card .button{
   color: #fff;
   background: #374A67;
+  width: 84%;
 }
 
 article .button:hover {
@@ -91,15 +101,6 @@ article .button:hover {
   background: #fff;
 }
 
-.hero-box {
-  text-align: center;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
-  width: 100%;
-}
 
 .button {
   display: inline-block;
@@ -122,6 +123,16 @@ article .button:hover {
 .button:hover {
   color: #fff;
   background: #374A67;
+}
+
+.hero-box {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
 }
 
 .hero-box p {
