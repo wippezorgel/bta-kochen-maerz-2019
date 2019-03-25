@@ -31,13 +31,6 @@ article {
   margin-bottom: 1rem;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 #navigation {
   display: none;
 }
@@ -61,8 +54,26 @@ article {
   position: relative;
 }
 
-h2{
+#rezepte h2 {
   text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.card {
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: -2px 3px 8px rgba(0, 0, 0, 0.66);
+  overflow: hidden;
+  width: 100%;
+  display: block;
 }
 
 .card img {
@@ -74,26 +85,20 @@ h2{
   color: #000;
 }
 
-.card{
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: -2px 3px 8px rgba(0,0,0,0.66);
-  overflow: hidden;
-}
-
-.card h3 a{
+.card h3 a {
   color: black;
 }
 
-.card p a{
+.card p a {
   color: #828282;
-text-shadow: 6px 4px 10px rgba(0,0,0,0.43);
+  text-shadow: 6px 4px 10px rgba(0, 0, 0, 0.43);
 }
 
-.card .button{
+.card .button {
   color: #fff;
   background: #374A67;
   width: 84%;
+  margin-bottom: 10px;
 }
 
 article .button:hover {
@@ -101,10 +106,8 @@ article .button:hover {
   background: #fff;
 }
 
-
 .button {
   display: inline-block;
-  margin-top: 20px;
   color: #374A67;
   border-radius: 4px;
   background-color: #fff;
@@ -112,9 +115,6 @@ article .button:hover {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  /* -webkit-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.4);
--moz-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.4); */
-  /* ist für alte mozilla/webkit Browser gedacht */
   box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.4);
   border: 1px solid #374A67;
   transition: 0.2s all ease;
@@ -139,7 +139,55 @@ article .button:hover {
   font-size: 17px;
 }
 
+.widget {
+  background: #04122B;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
 
+input{
+  height: 44px;
+  border-radius: 4px;
+}
+
+/* .newsletter input {
+  display: inline-block;
+  color: #374A67;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 14px;
+  border: 1px solid #374A67;
+  margin-top: 10px;
+} */
+
+/* für tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #burger {
+    display: none;
+  }
+
+  #navigation {
+    display: block;
+  }
+
+  nav li {
+    float: left;
+    margin-left: 30px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* für desktop */
 @media (min-width: 1024px) {
   #burger {
     display: none;
@@ -157,5 +205,12 @@ article .button:hover {
   .container {
     width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 calc(33.3333% - 20px);
   }
 }
